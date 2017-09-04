@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FTX_ShoppingCartCell" rowHeight="112" id="KGk-i7-Jjw" customClass="YTTShoppingCartCell" customModule="ShoppingCartDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4m-eq-MwT">
+                        <rect key="frame" x="0.0" y="0.0" width="469" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NS4-2K-Kld"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vAh-Dw-jmG">
+                        <rect key="frame" x="42" y="10" width="70" height="91.5"/>
+                        <color key="backgroundColor" red="0.50957573779999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="dAw-c4-26O"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="橡木卫浴柜欧式洗刷柜子 洗刷间柜收纳柜 橡木卫浴柜欧式洗刷柜子 洗刷间柜收纳柜" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-wO-QLD">
+                        <rect key="frame" x="122" y="10" width="325.5" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜色分类: 米色单扇窗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T08-Gq-LQh">
+                        <rect key="frame" x="122.5" y="46.5" width="118" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2399.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-3i-IfK">
+                        <rect key="frame" x="135.5" y="82" width="52" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.80784313725490198" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-aT-cBD">
+                        <rect key="frame" x="5" y="40" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="EGU-rT-YOU"/>
+                            <constraint firstAttribute="height" constant="32" id="n7g-HH-lhe"/>
+                        </constraints>
+                        <state key="normal" image="shoppingcart_xuanze-2"/>
+                        <state key="selected" image="shoppingcart_xuanze-1"/>
+                        <state key="highlighted" title="择"/>
+                        <connections>
+                            <action selector="YTTselectedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ItY-yN-g8L"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ez-YH-ubs">
+                        <rect key="frame" x="382" y="78.5" width="26" height="23"/>
+                        <state key="normal" image="shoppingcart_jian"/>
+                        <connections>
+                            <action selector="YTTsubGoodsAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xr0-B8-MMt"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-hX-tEz">
+                        <rect key="frame" x="413" y="82" width="15" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="Itr-Yl-3K2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJC-o8-tku">
+                        <rect key="frame" x="433" y="78.5" width="26" height="23"/>
+                        <state key="normal" image="shoppingcart_jia"/>
+                        <connections>
+                            <action selector="YTTaddGoodsAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MH8-RZ-x8y"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y67-Xy-lFf">
+                        <rect key="frame" x="122" y="82.5" width="13.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.80784313725490198" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a3x-aT-cBD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="0ot-2b-M4F"/>
+                    <constraint firstItem="Bxe-wO-QLD" firstAttribute="leading" secondItem="vAh-Dw-jmG" secondAttribute="trailing" constant="10" id="2QY-68-0P7"/>
+                    <constraint firstItem="M8P-3i-IfK" firstAttribute="centerY" secondItem="y67-Xy-lFf" secondAttribute="centerY" id="8Uq-Vr-4WS"/>
+                    <constraint firstItem="y67-Xy-lFf" firstAttribute="leading" secondItem="Bxe-wO-QLD" secondAttribute="leading" id="8jr-2T-4eH"/>
+                    <constraint firstAttribute="bottom" secondItem="vAh-Dw-jmG" secondAttribute="bottom" constant="10" id="9NB-xk-xBV"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bxe-wO-QLD" secondAttribute="trailing" constant="10" id="AhP-HY-Rc4"/>
+                    <constraint firstItem="F4m-eq-MwT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Br9-a8-nvK"/>
+                    <constraint firstItem="M8P-3i-IfK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="T08-Gq-LQh" secondAttribute="bottom" constant="10" id="CCQ-ui-qNR"/>
+                    <constraint firstItem="2pd-hX-tEz" firstAttribute="leading" secondItem="0ez-YH-ubs" secondAttribute="trailing" constant="5" id="Fyw-So-9Rp"/>
+                    <constraint firstItem="qJC-o8-tku" firstAttribute="centerY" secondItem="M8P-3i-IfK" secondAttribute="centerY" id="NGF-uc-HId"/>
+                    <constraint firstItem="vAh-Dw-jmG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UCu-NS-WEd"/>
+                    <constraint firstItem="vAh-Dw-jmG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UTq-Y2-dQw"/>
+                    <constraint firstItem="T08-Gq-LQh" firstAttribute="leading" secondItem="Bxe-wO-QLD" secondAttribute="leading" id="VGI-om-rni"/>
+                    <constraint firstItem="0ez-YH-ubs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M8P-3i-IfK" secondAttribute="trailing" constant="5" id="XD0-oZ-roR"/>
+                    <constraint firstItem="Bxe-wO-QLD" firstAttribute="top" secondItem="vAh-Dw-jmG" secondAttribute="top" id="ZRX-Yz-3SS"/>
+                    <constraint firstItem="0ez-YH-ubs" firstAttribute="centerY" secondItem="M8P-3i-IfK" secondAttribute="centerY" id="b1v-h6-wai"/>
+                    <constraint firstItem="F4m-eq-MwT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gSj-gj-4Rk"/>
+                    <constraint firstItem="M8P-3i-IfK" firstAttribute="leading" secondItem="y67-Xy-lFf" secondAttribute="trailing" id="i7h-vP-eCA"/>
+                    <constraint firstItem="vAh-Dw-jmG" firstAttribute="leading" secondItem="a3x-aT-cBD" secondAttribute="trailing" constant="5" id="inI-9n-5Ii"/>
+                    <constraint firstItem="0ez-YH-ubs" firstAttribute="bottom" secondItem="vAh-Dw-jmG" secondAttribute="bottom" id="k25-Wl-FYh"/>
+                    <constraint firstItem="qJC-o8-tku" firstAttribute="leading" secondItem="2pd-hX-tEz" secondAttribute="trailing" constant="5" id="sHx-xK-Rbd"/>
+                    <constraint firstAttribute="trailing" secondItem="qJC-o8-tku" secondAttribute="trailing" constant="10" id="sj0-8a-b0z"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T08-Gq-LQh" secondAttribute="trailing" constant="10" id="sng-CN-cga"/>
+                    <constraint firstItem="T08-Gq-LQh" firstAttribute="top" secondItem="Bxe-wO-QLD" secondAttribute="bottom" constant="5" id="tXf-hu-jEl"/>
+                    <constraint firstItem="a3x-aT-cBD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="weu-t6-n5g"/>
+                    <constraint firstItem="2pd-hX-tEz" firstAttribute="centerY" secondItem="M8P-3i-IfK" secondAttribute="centerY" id="yeh-1i-dTh"/>
+                    <constraint firstAttribute="trailing" secondItem="F4m-eq-MwT" secondAttribute="trailing" id="ywb-1u-yOF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="classLabel" destination="T08-Gq-LQh" id="PYA-qg-hOB"/>
+                <outlet property="numberLabel" destination="2pd-hX-tEz" id="eAw-u9-tZt"/>
+                <outlet property="priceLabel" destination="M8P-3i-IfK" id="dha-bC-kpS"/>
+                <outlet property="selBtn" destination="a3x-aT-cBD" id="gIk-yW-L2Y"/>
+                <outlet property="titleLabel" destination="Bxe-wO-QLD" id="BGV-tJ-4op"/>
+            </connections>
+            <point key="canvasLocation" x="-221.5" y="-138"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shoppingcart_jia" width="26" height="23"/>
+        <image name="shoppingcart_jian" width="26" height="23"/>
+        <image name="shoppingcart_xuanze-1" width="20" height="20"/>
+        <image name="shoppingcart_xuanze-2" width="20" height="20"/>
+    </resources>
+</document>
